@@ -4,8 +4,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
+//it will go and check for "basic" in application property file and configure all the variable
 @ConfigurationProperties("basic")
 public class BasicConfiguration {
+	
 	private boolean value;
 	private String message;
 	private int number;
